@@ -1,0 +1,7 @@
+COLOR PALETTE
+2A2A37 - HEX [Dark Blue]
+FF9900 - HEX [Yellow]
+
+FONT
+Rubik - Bold [32, 20]
+Poppins - Regular [16]

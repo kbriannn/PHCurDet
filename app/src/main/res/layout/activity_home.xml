@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="414dp"
+android:layout_height="736dp"
+android:background="#F6F6F6"
+tools:context=".HomeActivity">
+
+<Button
+    android:id="@+id/btnBnknNG"
+    android:layout_width="165dp"
+    android:layout_height="165dp"
+    android:layout_marginStart="28dp"
+    android:layout_marginLeft="28dp"
+    android:layout_marginTop="258dp"
+    android:drawableTop="@drawable/ng_1000s"
+    android:paddingTop="0dp"
+    android:fontFamily="@font/archivo"
+    android:letterSpacing="0.005"
+    android:text="BANKNOTE\nNEW GENERATION"
+    android:textColor="#2A2A37"
+    android:textSize="12sp"
+    android:textStyle="bold"
+    app:backgroundTint="#FFFFFF"
+    app:cornerRadius="10dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<Button
+    android:id="@+id/btnBnknDMN"
+    android:layout_width="165dp"
+    android:layout_height="165dp"
+    android:layout_marginStart="28dp"
+    android:layout_marginLeft="28dp"
+    android:layout_marginTop="258dp"
+    android:drawableTop="@drawable/dmn_1000s"
+    android:paddingTop="0dp"
+    android:fontFamily="@font/archivo"
+    android:letterSpacing="0.005"
+    android:text="BANKNOTE\nDEMONITIZED"
+    android:textColor="#2A2A37"
+    android:textSize="12sp"
+    android:textStyle="bold"
+    app:backgroundTint="#FFFFFF"
+    app:cornerRadius="10dp"
+    app:layout_constraintStart_toEndOf="@+id/btnBnknNG"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<Button
+    android:id="@+id/btnCoinNG"
+    android:layout_width="165dp"
+    android:layout_height="165dp"
+    android:layout_marginStart="28dp"
+    android:layout_marginLeft="28dp"
+    android:layout_marginTop="28dp"
+    android:drawableTop="@drawable/ng_20"
+    android:fontFamily="@font/archivo"
+    android:letterSpacing="0.005"
+    android:text="COIN\nNEW GENERATION"
+    android:textColor="#2A2A37"
+    android:textSize="12sp"
+    android:textStyle="bold"
+    app:backgroundTint="#FFFFFF"
+    app:cornerRadius="10dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btnBnknNG" />
+
+<Button
+    android:id="@+id/btnCoinDMN"
+    android:layout_width="165dp"
+    android:layout_height="165dp"
+    android:layout_marginStart="28dp"
+    android:layout_marginLeft="28dp"
+    android:layout_marginTop="28dp"
+    android:drawableTop="@drawable/dmn_10"
+    android:fontFamily="@font/archivo"
+    android:letterSpacing="0.005"
+    android:text="COIN\nDEMONITIZED"
+    android:textColor="#2A2A37"
+    android:textSize="12sp"
+    android:textStyle="bold"
+    app:backgroundTint="#FFFFFF"
+    app:layout_constraintStart_toEndOf="@+id/btnCoinNG"
+    app:layout_constraintTop_toBottomOf="@+id/btnBnknDMN" />
+
+<ImageView
+    android:id="@+id/imgTopBar"
+    android:layout_width="0dp"
+    android:layout_height="175dp"
+    android:layout_marginTop="25dp"
+    android:background="#2A2A37"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/ng_1000x"
+    app:tint="#2A2A37"
+    app:tintMode="multiply" />
+
+<Button
+    android:id="@+id/btnPhPeso"
+    android:layout_width="0dp"
+    android:layout_height="75dp"
+    android:fontFamily="@font/archivo"
+    android:letterSpacing="0.005"
+    android:text="PHILIPPINE PESO"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    app:backgroundTint="#FF9900"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+<TextView
+    android:id="@+id/txtTopBar1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/archivo"
+    android:letterSpacing="0.005"
+    android:text="PESO"
+    android:textColor="#FFFFFF"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="@+id/imgTopBar"
+    app:layout_constraintEnd_toEndOf="@+id/imgTopBar"
+    app:layout_constraintStart_toStartOf="@+id/imgTopBar"
+    app:layout_constraintTop_toTopOf="@+id/imgTopBar" />
+
+<TextView
+    android:id="@+id/txtTopBar2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/archivo"
+    android:letterSpacing="0.005"
+    android:text="Philippine Peso Banknote &amp; Coin"
+    android:textColor="#FFFFFF"
+    android:textSize="14sp"
+    android:textStyle="normal"
+    app:layout_constraintBottom_toBottomOf="@+id/imgTopBar"
+    app:layout_constraintEnd_toEndOf="@+id/imgTopBar"
+    app:layout_constraintStart_toStartOf="@+id/imgTopBar"
+    app:layout_constraintTop_toTopOf="@+id/imgTopBar"
+    app:layout_constraintVertical_bias="0.692" />
+
+<ImageButton
+    android:id="@+id/btnSetting"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:background="@null"
+    android:scaleX=".5"
+    android:scaleY=".5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/imgTopBar"
+    app:srcCompat="@drawable/gear_icon"
+    tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
